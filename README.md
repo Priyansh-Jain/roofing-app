@@ -2,7 +2,7 @@
 
 
 
-Ticket is automatically expired after 8 hours of StartTime of ticket using mongodb TTL index.
+Ticket is automatically expired after 8 hours of StartTime of ticket using TTL index in mongodb.
 
 ## `An endpoint to book a ticket using a user’s name, phone number, and timings.`
 
