@@ -1,70 +1,120 @@
+# `BACKEND API`
+
+
+
+Ticket is automatically expired after 8 hours of StartTime of ticket using mongodb TTL index.
+
+## `An endpoint to book a ticket using a user’s name, phone number, and timings.`
+
+#### `1. Select Time for your Ticket`
+You have to select Time slot from image given below having StartTime and EndTime.<br>
+By default each TimeSlot has 20 No. of Seats .
+
 ![Screenshot from 2020-08-30 23-27-15](https://user-images.githubusercontent.com/54509179/91666258-ead82e00-eb18-11ea-91ea-891943b9973e.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### `2. Post Request in Postman`
+Add User details having Username , phoneNo , SlotID(you have choosen from above image) and expiry date is automatically generated according to StartTime.
 
-## Available Scripts
+![Screenshot from 2020-08-30 23-44-29](https://user-images.githubusercontent.com/54509179/91666501-e0b72f00-eb1a-11ea-9435-d168051ef4f5.png)
 
-In the project directory, you can run:
 
-### `yarn start`
+#### `3. Seat is also decreases of that particular time`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+See SlotID of 8 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Screenshot from 2020-08-30 23-47-37](https://user-images.githubusercontent.com/54509179/91666546-41df0280-eb1b-11ea-825b-080fcfa42129.png)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `4. Ticket Details`
+After adding ticket details it looks like this
 
-### `yarn build`
+![Screenshot from 2020-08-30 23-49-04](https://user-images.githubusercontent.com/54509179/91666565-6fc44700-eb1b-11ea-820b-56a3e66fc322.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_____________________
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## `An endpoint to view all the tickets for a particular time(StartTime and EndTime).`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Insert query of StartTime and EndTime into url for getting data of particular time.
 
-### `yarn eject`
+#### `1. Time Slot`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot from 2020-08-30 23-54-45](https://user-images.githubusercontent.com/54509179/91666664-3809cf00-eb1c-11ea-9bc5-f72140b944fd.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `2. Tickets of Particular Time`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+StartTime = 2020-08-30T14:00:00.000Z & EndTime = 2020-08-30T22:00:00.000Z
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Screenshot from 2020-08-30 23-57-52](https://user-images.githubusercontent.com/54509179/91666713-b36b8080-eb1c-11ea-8bc3-49f6056a7242.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+____________________
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##  `An endpoint to view the user’s details based on the ticket id.`
 
-### Code Splitting
+Insert TicketID into url for getting data of that Ticket ID.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+TicketID of 24
 
-### Analyzing the Bundle Size
+![Screenshot from 2020-08-30 23-52-09](https://user-images.githubusercontent.com/54509179/91666613-dd707300-eb1b-11ea-9d00-6d1359b65f7b.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+_____________________________________________
 
-### Making a Progressive Web App
+## `An endpoint to delete a particular ticket.`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### `1. Before Deleting a Ticket of 17 id `
 
-### Advanced Configuration
+Ticket image
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+![Screenshot from 2020-08-30 23-49-04](https://user-images.githubusercontent.com/54509179/91666565-6fc44700-eb1b-11ea-820b-56a3e66fc322.png)
 
-### Deployment
+Slot Image
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+![Screenshot from 2020-08-30 23-54-45](https://user-images.githubusercontent.com/54509179/91666664-3809cf00-eb1c-11ea-9bc5-f72140b944fd.png)
 
-### `yarn build` fails to minify
+### `2. Delete Request in Postman.`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Screenshot from 2020-08-31 00-03-14](https://user-images.githubusercontent.com/54509179/91666795-69cf6580-eb1d-11ea-8305-726e3de78626.png)
+
+
+### `3. After Deleting a Ticket of 17 id `
+
+17 id of Ticket got deleted as you can see in image below.
+
+![Screenshot from 2020-08-31 00-04-33](https://user-images.githubusercontent.com/54509179/91666808-96837d00-eb1d-11ea-9812-dd665f2d6832.png)
+
+
+No. of seats of that time slot (SlotID = 7) is also increases.
+
+![Screenshot from 2020-08-31 00-05-27](https://user-images.githubusercontent.com/54509179/91666834-c6cb1b80-eb1d-11ea-84db-5fa6ba68c897.png)
+_________________
+
+## `An endpoint to update a ticket timing.`
+
+### `We will update ticket timing of ticket id 13 and change time using SlotID`
+
+### `1. Before Updating a Ticket Time`
+
+![Screenshot from 2020-08-31 00-09-05](https://user-images.githubusercontent.com/54509179/91666892-39d49200-eb1e-11ea-99d2-f95807b54d18.png)
+
+### `2. Choose new Time Slot`
+
+Choose new TimeSlot from image given below.
+
+![Screenshot from 2020-08-31 00-05-27](https://user-images.githubusercontent.com/54509179/91666834-c6cb1b80-eb1d-11ea-84db-5fa6ba68c897.png)
+
+### `3. PUT Request in Postman`
+
+![Screenshot from 2020-08-31 00-12-03](https://user-images.githubusercontent.com/54509179/91666936-a485cd80-eb1e-11ea-8b11-0ba4b3a5a527.png)
+
+
+### `4. No of seats also changes`
+
+![Screenshot from 2020-08-31 00-16-02](https://user-images.githubusercontent.com/54509179/91667016-31c92200-eb1f-11ea-9dc2-3ff069339810.png)
+
+### `4. After Updating a Ticket Time using TicketID and New Ticket timing`
+
+![Screenshot from 2020-08-31 00-13-24](https://user-images.githubusercontent.com/54509179/91666956-d4cd6c00-eb1e-11ea-8c0e-3c0a9a678b84.png)
+
+
+
+
