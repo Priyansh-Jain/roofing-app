@@ -63,7 +63,7 @@ _____________________________________________
 
 ## `An endpoint to delete a particular ticket.`
 
-### `1. Before Deleting a Ticket of 17 id `
+#### `1. Before Deleting a Ticket of 17 id `
 
 Ticket image
 
@@ -73,12 +73,12 @@ Slot Image (See SlotID of 7)
 
 ![Screenshot from 2020-08-30 23-54-45](https://user-images.githubusercontent.com/54509179/91666664-3809cf00-eb1c-11ea-9bc5-f72140b944fd.png)
 
-### `2. Delete Request in Postman.`
+#### `2. Delete Request in Postman.`
 
 ![Screenshot from 2020-08-31 00-03-14](https://user-images.githubusercontent.com/54509179/91666795-69cf6580-eb1d-11ea-8305-726e3de78626.png)
 
 
-### `3. After Deleting a Ticket of 17 id `
+#### `3. After Deleting a Ticket of 17 id `
 
 17 id of Ticket got deleted as you can see in image below.
 
@@ -92,30 +92,31 @@ _________________
 
 ## `An endpoint to update a ticket timing.`
 
-### `We will update ticket timing of ticket id 13 and change time using SlotID`
+#### `We will update ticket timing of ticket id 13 and change time using SlotID`
 
-### `1. Before Updating a Ticket Time`
+#### `1. Before Updating a Ticket Time`
 
 ![Screenshot from 2020-08-31 00-09-05](https://user-images.githubusercontent.com/54509179/91666892-39d49200-eb1e-11ea-99d2-f95807b54d18.png)
 
-### `2. Choose new Time Slot`
+#### `2. Choose new Time Slot`
 
 Choose new TimeSlot from image given below.
 
 ![Screenshot from 2020-08-31 00-05-27](https://user-images.githubusercontent.com/54509179/91666834-c6cb1b80-eb1d-11ea-84db-5fa6ba68c897.png)
 
-### `3. PUT Request in Postman`
+#### `3. PUT Request in Postman`
 
 ![Screenshot from 2020-08-31 00-12-03](https://user-images.githubusercontent.com/54509179/91666936-a485cd80-eb1e-11ea-8b11-0ba4b3a5a527.png)
 
 
-### `4. No of seats also changes`
+#### `4. No of seats also changes`
 
 ![Screenshot from 2020-08-31 00-16-02](https://user-images.githubusercontent.com/54509179/91667016-31c92200-eb1f-11ea-9dc2-3ff069339810.png)
 
-### `4. After Updating a Ticket Time using TicketID and New Ticket timing`
+#### `5. After Updating a Ticket Time using TicketID and New Ticket timing`
 
 ![Screenshot from 2020-08-31 00-13-24](https://user-images.githubusercontent.com/54509179/91666956-d4cd6c00-eb1e-11ea-8c0e-3c0a9a678b84.png)
+
 
 
 
