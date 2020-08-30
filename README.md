@@ -69,7 +69,7 @@ Ticket image
 
 ![Screenshot from 2020-08-30 23-49-04](https://user-images.githubusercontent.com/54509179/91666565-6fc44700-eb1b-11ea-820b-56a3e66fc322.png)
 
-Slot Image
+Slot Image (See SlotID of 7)
 
 ![Screenshot from 2020-08-30 23-54-45](https://user-images.githubusercontent.com/54509179/91666664-3809cf00-eb1c-11ea-9bc5-f72140b944fd.png)
 
