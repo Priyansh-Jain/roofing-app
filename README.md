@@ -38,6 +38,8 @@ Insert query of StartTime and EndTime into url for getting data of particular ti
 
 #### `1. Time Slot`
 
+Choose Any time means both StartTime and EndTime
+
 ![Screenshot from 2020-08-30 23-54-45](https://user-images.githubusercontent.com/54509179/91666664-3809cf00-eb1c-11ea-9bc5-f72140b944fd.png)
 
 #### `2. Tickets of Particular Time`
